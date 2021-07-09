@@ -166,7 +166,7 @@ footer ul li a:hover {
 }
 
 .carousel__fondo {
-  background-image: url("/imagenes/edificios.svg");
+  background-image: url("https://pilarelisii.github.io/TePuedoAsegurar/imagenes/edificios.svg");
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -666,7 +666,7 @@ footer ul li a:hover {
 
 /*preguntas frecuentes*/
 .preguntasFrecuentes__fondo {
-  background-image: url("/imagenes/edificios.svg");
+  background-image: url("https://pilarelisii.github.io/TePuedoAsegurar/imagenes/edificios.svg");
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -1357,7 +1357,7 @@ a[aria-expanded="true"] i {
 }
 
 .mapa {
-  background-image: url("/imagenes/edificios.svg");
+  background-image: url("https://pilarelisii.github.io/TePuedoAsegurar/imagenes/edificios.svg");
   background-size: cover;
   background-attachment: fixed;
 }
