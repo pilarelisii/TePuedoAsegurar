@@ -1,0 +1,424 @@
+/*index*/
+$main-color : #15B2F6;
+$text-color: #343434;
+$back-grey : #E5E5E5;
+$main-font: 'Raleway', sans-serif;
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+.carousel__fondo {
+    background-image: url("/imagenes/edificios.svg");
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+}
+.carousel__sub-item {
+    margin: auto;
+    width: 90%;
+    height: 80vh;
+
+    display: flex;
+    align-items: center;
+    img {
+        width: 35%;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+}
+.sub-item__titulos {
+    flex: 1;
+    justify-content: center;
+
+    h1{
+        font-family: $main-font;
+        font-weight: 700;
+        font-size:  70px;
+        color: $text-color;
+        line-height: 1.5em;
+        b{
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+    label{
+        background-color: $main-color;
+        text-decoration: none;
+        border: none;
+        font-size: 20px;
+        border-radius: 15px;
+        padding: 10px;
+        color: white;
+        box-shadow: 0px 0px 3px $back-grey;
+        cursor: pointer;
+        width: 190px;
+        margin-top: $margin-default;
+    
+        display: flex;
+        align-items: center;
+    }
+    i{
+        margin-left: $margin-default;
+        transition: 0.2s;
+    }
+    button {
+        display: none;
+    }
+}
+.sub-item__titulos label:hover{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.sub-item__titulos label:hover i{
+    transform: rotate(90deg);
+    transition: 0.2s;
+}
+
+@media (max-width:1200px) {
+    .sub-item__titulos { 
+        h1 {
+        font-size: 50px;
+        }
+        label {
+            padding: 8px;
+            width: 135px;
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 1090px) {
+    .carousel__sub-item {
+        max-height: 750px;
+        padding: 40px auto 40px auto;
+    }
+}
+@media (max-width:800px) {
+    .carousel__sub-item {
+        flex-direction: column;
+        max-height: 450px;
+        margin: auto;
+        padding-bottom: 20px;
+        h1 {
+            font-size: 25px;
+            text-align: center;
+            margin-top: $margin-default+20;
+        }
+        img {
+            width: 70%;
+            margin: $margin-default auto;
+            flex: 2;
+        }
+        label {
+            width: 150px;
+            display: block;
+            margin: auto;
+            margin-top: $margin-default+20;
+        }
+    }
+}
+/*SECCION COTIZAR*/
+.formCotizar {
+    background-color: $back-grey;
+    padding: 10px 0 20px 0;
+}
+.formCotizar__contenedor {
+    margin: $margin-default+20 auto;
+    width: 90%;
+    height: auto;
+    h1{
+        font-family: $main-font;
+        font-size: 40px;
+        color: $text-color;
+        font-weight: 900;
+        text-align: center;
+        width: 75%;
+        margin: auto;
+        margin-bottom: $margin-default+5;
+    }
+}
+/*acceso a distintos formularios*/
+.formCotizar__seguros{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: $margin-default+15;
+    a{
+        font-size: 12px;
+        cursor: pointer;
+        text-align: center;
+        padding: 28px;
+        border-radius: 100%;
+        background-color: #ffffff;
+        color: $text-color;
+        font-weight: 600;
+        letter-spacing: 3px;
+        line-height: 30px;
+        border: 2px solid white;
+        text-decoration: none;
+    }
+    i{
+        font-size: 50px;
+    }
+    .activo{
+        background-color: white;
+        color: $main-color;
+        border: 2px solid $main-color;
+    }
+}
+.formCotizar__seguros a:hover {
+    color: $main-color;
+    transition: .4s ease all;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.274);
+}
+
+/*COTIZADOR*/
+.formCotizar__cotizador form input:focus {
+    border: 2px solid $main-color;
+}
+.formCotizar__cotizador {
+    form input {
+    padding: 15px;
+    font-size: 20px;
+    font-family: $main-font;
+    border: none;
+    border-radius: 11px;
+    background-color: white;
+    margin: 10px 5px 25px 5px;
+    outline: none;
+    border: 2px solid white;
+
+    flex: 1;
+    }
+    .lineaUno, .lineaDos, .lineaTres {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lineaUno #mail {
+        flex: 2;
+    }
+    .enviar{
+        text-decoration: none;
+        border: none;
+        font-size: 20px;
+        border-radius: 15px;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        letter-spacing: 2px;
+        background-color: $main-color;
+    }
+    .reset {
+        text-decoration: none;
+        border: 2px solid $main-color;
+        font-size: 18px;
+        border-radius: 15px;
+        padding: 9px;
+        color: $text-color;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.219);
+    }
+}
+.formCotizar__cotizador .enviar:hover {
+    opacity: 0.7;
+    transition: .5s;
+}
+.formCotizar__cotizador .reset:hover {
+    transition: .5s;
+    background-color: rgba(255, 255, 255, 0.911);
+}
+
+/*responsive seccion cotizar*/
+@media (max-width: 1200px) {
+    .formCotizar__seguros {
+        gap: 30px;
+        i{
+            font-size: 45px;
+         }
+    }
+}
+@media (max-width: 1024px) {
+    .formCotizar__seguros {
+        gap: 20px;
+        i {
+            font-size: 30px;
+        }
+        a{
+            font-size: 10px;
+            padding: 24px;
+            line-height: 25px;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .formCotizar h1 {
+        font-size: 30px;
+    }
+    .formCotizar__seguros {
+        gap: 18px;
+        a{
+            font-size: 8px;
+            padding: 20px;
+            line-height: 20px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .formCotizar__seguros {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 12px;
+        grid-column-gap: 70px;
+        a {
+            font-size: 10px;
+            padding: 16x;
+            line-height: 32px;
+        }
+        i {
+            font-size: 40px;
+        }
+    }
+    .formCotizar { 
+        h1 {
+            font-size: 25px;
+        }
+        form input {
+        padding: 10px;
+        font-size: 15px;
+        margin: 10px 10px 25px 10px;
+        }
+        .enviar {
+            font-size: 15px;
+            padding: 7px;
+        }
+        .reset {
+            font-size: 14px;
+            padding: 5px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .formCotizar__seguros {
+        grid-column-gap: 55px;
+        grid-row-gap: 12px;
+        a {
+            font-size: 8px;
+            padding: 12px;
+            line-height: 25px;
+        }
+        i {
+            font-size: 35px;
+        }
+    }
+    .formCotizar form input {
+        margin: 8px 5px 15px 5px;
+    }
+}
+@media (max-width: 480px) {
+    .formCotizar h1 {
+        font-size: 20px;
+    }
+    .formCotizar__seguros {
+        grid-column-gap: 50px;
+        grid-row-gap: 10px;
+        a {
+            font-size: 8px;
+            padding: 9px;
+            line-height: 22px;
+        }
+        i {
+            font-size: 30px;
+        }
+    }
+    .formCotizar__cotizador { 
+        form input {
+        padding: 8px;
+        font-size: 12px;
+        margin: 5px 5px 10px 5px;
+        }
+        .enviar {
+            font-size: 14px;
+            padding: 6px;
+        }
+        .reset {
+            font-size: 13px;
+            padding: 4px;
+        }
+    }
+}
+@media (max-width: 380px) {
+    .formCotizar__seguros {
+        grid-column-gap: 35px;
+        i {
+            font-size: 25px;
+        }
+    }
+}
+/*PREGUNTAS FRECUENTES ACCESO*/
+.FAQ {
+    margin: $margin-default+20 auto;
+    width: 90%;
+
+    height: auto;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .FAQ__titulos {
+        flex: 2;
+        justify-content: center;
+    }
+    h1{
+        color: $text-color;
+        font-family: $main-font;
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: ($margin-default)-5;
+    }
+    h2{
+        color: $text-color;
+        font-family: $main-font;
+        font-weight: 300;
+        font-size: 40px;
+        a{
+            color: $main-color;
+        }
+    }
+    img{
+        width: 40%;
+    
+        flex: 1;
+        justify-content: center;
+    }
+}
+
+@media (max-width:1024px) {
+    .FAQ {
+        h1 {
+        font-size: 45px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+    }
+}
+@media (max-width:768px) {
+    .FAQ {
+        flex-direction: column;
+        img {
+            width: 70%;
+            margin: auto;
+        }
+        h2 {
+            margin-bottom: $margin-default+20;
+        }
+    }
+}
+@media (max-width:500px) {
+    .FAQ {
+        h1 {
+        font-size: 30px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+    }
+}

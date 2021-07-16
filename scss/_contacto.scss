@@ -1,0 +1,288 @@
+/*CONTACTO*/
+$main-color : #15B2F6;
+$text-color: #343434;
+$back-grey : #E5E5E5;
+$main-font: 'Raleway', sans-serif;
+$margin-default: 20px;
+$max-width: 1380px;
+
+.contacto__contenedor {
+    color: $text-color;
+    font-size: 20px;
+}
+.caja-principal {
+    margin: $margin-default+20 auto;
+    width: 90%;
+    max-width: $max-width;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*caja 1/2*/
+.imagen-titulo {
+    width: 45%;
+    min-height: 500px;
+
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+    img {
+        display: flex;
+        flex: 1;
+        align-content: center;
+    
+        width: 95%;
+    }
+    h1{
+        font-family: $main-font;
+        font-size: 40px;
+        font-weight: 900;
+        margin: 20px 0 40px 0;
+        color: $text-color;
+    
+        align-content: flex-start;
+    }
+}
+/*caja 2/2*/
+.contacto__formulario {
+    width: 100%;
+    min-height: 500px;
+    padding-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    p {
+        font-family: $main-font;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 25px 0 20px 0;
+        color: $text-color;
+    }
+}
+/*formulario*/
+.formContacto {
+    width: auto;
+    color: $text-color;
+
+    .enviar{
+        background-color: $main-color;
+        text-decoration: none;
+        border: none;
+        font-size: 17px;
+        border-radius: 15px;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        letter-spacing: 2px;
+        margin-right: ($margin-default)-10;
+    }
+    .reset {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.219);
+        text-decoration: none;
+        border: 2px solid $main-color;
+        font-size: 16px;
+        border-radius: 15px;
+        padding: 9px;
+        color: $text-color;
+    }
+    .datosP {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input {
+        padding: 10px;
+        font-size: 18px;
+        font-family: $main-font;
+        border: none;
+        border-radius: 5px;
+        background-color: $back-grey;
+        margin: 8px 0 10px 0;
+    }
+    textarea {
+        padding: 12px;
+        font-size: 20px;
+        font-family: $main-font;
+        border: none;
+        border-radius: 5px;
+        background-color: $back-grey;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 12px 0 $margin-default 0;
+    }
+}
+.datosP {
+    input{
+    flex: 1;
+    }
+    #nombre{
+        margin-right: $margin-default;
+    }
+}
+.formContacto .enviar:hover {
+    opacity: 0.7;
+    transition: .5s;
+}
+.formContacto .reset:hover {
+    transition: .5s;
+    background-color: rgba(255, 255, 255, 0.911);
+}
+/*section maneras-contacto*/
+.manerasContacto {
+    background-color: $back-grey;
+    width: 100%;
+    margin: 30px 0 30px 0;
+    padding: 40px 0 40px 0;
+}
+.manerasContacto__contenedor {
+    width: 90%;
+    margin: auto;
+    max-width: $max-width;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    div {
+        background-color: white;
+        color: $text-color;
+        font-weight: 400;
+        padding: 20px;
+        border-radius: 5px;
+        font-size: 18px;
+    
+        
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+.extra-contacto {
+    a {
+    text-decoration: none;
+    color: $text-color;
+    margin: auto;
+    font-family: $main-font;
+    }
+    i{
+        color: $text-color;
+        font-size: 50px;
+        margin: 10px auto 10px auto;
+    }
+    .horarios {
+        font-size: 12px;
+    }
+}
+.extra-contacto a:hover i{
+    color: $main-color;
+    transition: .5s;
+}
+@media (max-width:980px) {
+    .datosP {
+        #nombre{
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width: 950px) {
+    .manerasContacto__contenedor {
+        gap: 15px;
+        div{
+            padding: 12px;
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width:800px) {
+    .caja-principal {
+        flex-direction: column;
+    }
+    .imagen-titulo {
+        width: 100%;
+        margin: auto;
+        min-height: auto;
+        h1{
+            font-size: 30px;
+            margin: $margin-default 0 15px 0;
+        }
+        img{
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    .contacto__formulario {
+        margin: auto;
+        width: 100%;
+        min-height: none;
+        p{
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .formContacto {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .manerasContacto__contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        div{
+            font-size: 16px;
+        }
+    }
+}
+/*acceso a cotizar desde CONTACTO.html*/
+.accesoCotizar {
+    margin: auto;
+    width: 90%;
+    max-width: $max-width;
+    height: auto;
+    padding: 50px 0 40px 0;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .acceso__titulos {
+        flex: 2;
+        justify-content: center;
+    }
+    h1{
+        color: $text-color;
+        font-family: $main-font;
+        font-size: 60px;
+        font-weight: 700;
+        a{
+            color: $main-color;
+        }
+    }
+    img{
+        width: 40%;
+    
+        flex: 1;
+        justify-content: center;
+    }
+}
+
+@media (max-width:1024px) {
+    .acceso__titulos h1 {
+        font-size: 45px;
+        }
+}
+@media (max-width:768px) {
+    .acceso__titulos {
+        flex-direction: column;
+        img {
+            width: 70%;
+            margin: auto;
+        }
+    }
+}
+@media (max-width:500px) {
+    .acceso__titulos h1 {
+        font-size: 30px;
+    }
+}

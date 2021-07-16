@@ -1,0 +1,102 @@
+$main-color : #15B2F6;
+$text-color: #343434;
+$back-grey : #E5E5E5;
+$main-font: 'Raleway', sans-serif;
+.mapa {
+    background-image: url("/imagenes/edificios.svg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contenedor__mapa {
+    margin: 0 auto;
+    width: 90%;
+    .subcontenedor__mapa {
+        display: flex;
+        padding-bottom: 20px;
+        justify-content: space-between;
+        img{
+            width: 40%;
+        }
+        ul {
+        list-style: none;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        .titulo {
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 30px;
+            color: $text-color;
+            font-family: $main-font;
+        }
+        .subtitulo {
+            font-weight: 600;
+            font-size: 25px;
+            color: $main-color;
+            font-family: $main-font;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            transition: .2s;
+            i{
+                transform: scale(1.1);
+                transition: .2s;
+            }
+        }
+        .subtitulo li {
+            margin-left: 15px;
+        }
+        li {
+            width: auto;
+        }
+        i {
+            margin-right: 5px;
+        }
+        ul {
+            margin: 14px 0;
+        }
+    }
+    }
+    h1{
+        font-weight: 800;
+        padding-top: 15px;
+        font-size: 50px;
+        color: $text-color;
+        font-family: $main-font;
+    }
+    
+}
+@media (max-width: 1150px) {
+    .contenedor__mapa {
+        .subcontenedor__mapa {
+            img {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 670px) {
+    .contenedor__mapa {
+        h1 {
+            font-size: 35px;
+        }
+        .titulo {
+            font-size: 20px;
+        }
+        .subtitulo {
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 470px) {
+    .contenedor__mapa {
+        h1 {
+            font-size: 30px;
+        }
+        ul .subtitulo li {
+            margin-left: 5px;
+        }
+    }
+}

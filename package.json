@@ -1,0 +1,28 @@
+{
+  "name": "tepuedoasegurar",
+  "version": "1.0.0",
+  "description": "Cotizador de polizas de seguro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "shortnpm": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pilarelisii/TePuedoAsegurar.git"
+  },
+  "keywords": [
+    "Cotizador",
+    "seguro",
+    "polizas"
+  ],
+  "author": "PilarElisii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pilarelisii/TePuedoAsegurar/issues"
+  },
+  "homepage": "https://github.com/pilarelisii/TePuedoAsegurar#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}
