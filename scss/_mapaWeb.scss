@@ -22,14 +22,14 @@ $main-font: 'Raleway', sans-serif;
         margin-bottom: 0;
         padding-bottom: 20px;
         .titulo {
-            font-weight: 700;
+            font-weight: 600;
             margin-top: 10px;
             font-size: 30px;
             color: $text-color;
             font-family: $main-font;
         }
         .subtitulo {
-            font-weight: 600;
+            font-weight: 500;
             font-size: 25px;
             color: $main-color;
             font-family: $main-font;
@@ -79,11 +79,8 @@ $main-font: 'Raleway', sans-serif;
 }
 @media (max-width: 670px) {
     .contenedor__mapa {
-        h1 {
-            font-size: 35px;
-        }
         .titulo {
-            font-size: 20px;
+            font-size: 17px;
         }
         .subtitulo {
             font-size: 15px;
@@ -92,8 +89,11 @@ $main-font: 'Raleway', sans-serif;
 }
 @media (max-width: 470px) {
     .contenedor__mapa {
-        h1 {
-            font-size: 30px;
+        .titulo {
+            font-size: 15px;
+        }
+        .subtitulo {
+            font-size: 12px;
         }
         ul .subtitulo li {
             margin-left: 5px;

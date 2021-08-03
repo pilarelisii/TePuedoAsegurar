@@ -3,15 +3,18 @@ $main-color : #15B2F6;
 $text-color: #343434;
 $back-grey : #E5E5E5;
 $main-font: 'Raleway', sans-serif;
-$margin-default: 20px;
 $max-width: 1380px;
 
 .contacto__contenedor {
     color: $text-color;
     font-size: 20px;
 }
+.contenedorTitulo.contacto {
+    background-color: #e5e5e5c2;
+    padding: 12px;
+}
 .caja-principal {
-    margin: $margin-default+20 auto;
+    margin: 25px auto;
     width: 90%;
     max-width: $max-width;
     display: flex;
@@ -21,27 +24,13 @@ $max-width: 1380px;
 /*caja 1/2*/
 .imagen-titulo {
     width: 45%;
-    min-height: 500px;
-
-    display: flex; 
-    justify-content: space-between;
-    flex-direction: column;
     flex: 1;
+    display: flex;
+    align-items: center;
     img {
-        display: flex;
-        flex: 1;
-        align-content: center;
-    
+        align-self: center;
+        justify-content: center;
         width: 95%;
-    }
-    h1{
-        font-family: $main-font;
-        font-size: 40px;
-        font-weight: 900;
-        margin: 20px 0 40px 0;
-        color: $text-color;
-    
-        align-content: flex-start;
     }
 }
 /*caja 2/2*/

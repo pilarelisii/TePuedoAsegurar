@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <title>Contacto</title>
+    <link rel="shortcut icon" href="/imagenes/favicon.ico">
 </head>
 <body>
     <script>
@@ -35,13 +36,13 @@
                     <a class="nav-link" href="/index.html#cotizar">Cotizar</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="/Pagina/Preguntas Frecuentes/FAQ.html">Preguntas Frecuentes</a>
+                    <a class="nav-link" href="/Preguntas Frecuentes/FAQ.html">Preguntas Frecuentes</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="/Pagina/Institucional/institucional.html">Sobre Nosotros</a>
+                    <a class="nav-link" href="/Institucional/institucional.html">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="/Pagina/Contacto/contacto.html">Contacto</a>
+                    <a class="nav-link" href="/Contacto/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="nav-link redes"><i class="fab fa-facebook"></i></a>
@@ -62,24 +63,27 @@
     <!--FORMULALRIO DE CONTACTO-->
 <section class="contacto">
         <div class="contacto__contenedor">
-    
+            <div class="contenedorTitulo contacto">
+                <div class="contenedorTitulo__subcontenedor">
+                  <h1>Contactate con Nosotros</h1>
+                </div>
+            </div>
             <section class="caja-principal">
         <div class="imagen-titulo">
-                <h1>Contactate con nosotros</h1>
                 <img src="/imagenes/contactus.png" alt="">
         </div>
         
         <div class="contacto__formulario">
             <p>Dejanos tu mensaje</p>
-            <form action="" method="" class="formContacto">
+            <form action="https://formsubmit.co/contacto@tepuedoasegurar.com.ar" method="POST" class="formContacto">
                 
                 <div class="datosP">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                <input type="text" name="gmail" id="gmail" placeholder="example@gmail.com">
+                <input type="text" name="text" id="nombre" placeholder="Nombre">
+                <input type="email" name="email" id="gmail" placeholder="example@gmail.com">
                 </div>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejá tu duda aca"></textarea>
+                <textarea name="textarea" id="mensaje" cols="30" rows="10" placeholder="Dejá tu duda aca"></textarea>
                 <div class="enviar-contacto">
-                <input type="submit" value="ENVIAR" class="enviar">
+                <input type="submit"  name="submit" value="ENVIAR" class="enviar">
                 <input type="reset" value="Resetear" class="reset">
                 </div>
             </form>
@@ -130,22 +134,26 @@
 <!--PIE DE PAGINA-->
 <footer>
     <div  class="piePag">
+        <div class="piePag__contenido">
         <ul>
             <li><a href="/index.html">Inicio</a></li>
             <li><a href="/index.html#cotizar">Cotizar</a></li>
-            <li><a href="/Pagina/Preguntas Frecuentes/FAQ.html">Preguntas Frecuentes</a></li>
-            <li><a href="/Pagina/Institucional/institucional.html">Institucional</a></li>
-            <li><a href="/Pagina/Contacto/contacto.html">Contacto</a></li>
-            <li><a href="/Pagina/MapaWeb/mapaWeb.html">Mapa de la página</a></li>
+            <li><a href="/Preguntas Frecuentes/FAQ.html">Preguntas Frecuentes</a></li>
+            <li><a href="/Institucional/institucional.html">Institucional</a></li>
+            <li><a href="/Contacto/contacto.html">Contacto</a></li>
+            <li><a href="/MapaWeb/mapaWeb.html">Mapa de la página</a></li>
         </ul>
-    
-      <div class="redSocial">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-whatsapp"></i></a>
-      <a href="#"><i class="fas fa-envelope"></i></a>
-      </div>
-      </div>
+      
+        <div class="redSocial">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+        </div>
+
+        <p>Desarrollado por Pilar Elisii</p>
+    </div>
 </footer>
 <!--LINKS JS-->
 <script src="https://kit.fontawesome.com/6523532a70.js" crossorigin="anonymous"></script>

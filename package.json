@@ -1,27 +1,22 @@
 {
-  "name": "tepuedoasegurar",
+  "name": "proyecto-frontend",
   "version": "1.0.0",
-  "description": "Cotizador de polizas de seguro",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "shortnpm": "sass --watch scss/style.scss css/style.css"
+    "tpaSass": "sass --watch scss/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pilarelisii/TePuedoAsegurar.git"
+    "url": "git+https://github.com/pilarelisii/Proyecto-Frontend.git"
   },
-  "keywords": [
-    "Cotizador",
-    "seguro",
-    "polizas"
-  ],
-  "author": "PilarElisii",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pilarelisii/TePuedoAsegurar/issues"
+    "url": "https://github.com/pilarelisii/Proyecto-Frontend/issues"
   },
-  "homepage": "https://github.com/pilarelisii/TePuedoAsegurar#readme",
+  "homepage": "https://github.com/pilarelisii/Proyecto-Frontend#readme",
   "dependencies": {
     "bootstrap": "^5.0.2"
   }

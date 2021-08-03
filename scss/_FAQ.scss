@@ -13,6 +13,27 @@ $max-width: 1380px;
     background-position: center;
     background-attachment: fixed;
 }
+.contenedorTitulo {
+    width: 100%;
+    background-color: #e5e5e53f;
+    border-radius: 0 0 40% 40%;
+    padding: 8px;
+    font-family: $main-font;
+    .contenedorTitulo__subcontenedor {
+        width: 90%;
+        margin: auto;
+        h1 { 
+            font-size: 45px;
+            font-weight: 900;
+            padding-top: 20px;
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+            padding: 20px 0 20px 0;
+        }
+    }
+}
 .preguntasFrecuentes {
     margin: auto;
     width: 90%;
@@ -22,19 +43,6 @@ $max-width: 1380px;
     color: $text-color;
     line-height: 1.8em;
     font-family: $main-font;
-
-    .preguntasFrecuentes__titulo {
-        h1 { 
-        font-family: $main-font;
-        font-size: 40px;
-        font-weight: 900;
-        margin-top: $margin-default+10;
-        }
-        h3 {
-        font-weight: 800;
-        margin: 30px 0 30px 0;
-        }
-    }
     .pregunta {
         font-weight: 600;
         width: 100%;
@@ -76,14 +84,18 @@ a[aria-expanded="true"] i{
     transition: .3s;
 }
 @media (max-width: 850px) {
-    .preguntasFrecuentes {
-        .preguntasFrecuentes__titulo h1{
+    .contenedorTitulo {
+        .contenedorTitulo__subcontenedor {
+            h1{
             font-size: 30px;
-        }
-        .preguntasFrecuentes__titulo h3 {
+            }
+            h3 {
             font-size: 20px;
             line-height: 1.5em;
+            }
         }
+    }
+    .preguntasFrecuentes {
         .pregunta {
             padding: 20px;
             margin: $margin-default auto 0;
@@ -99,13 +111,17 @@ a[aria-expanded="true"] i{
     }
 }
 @media (max-width: 650px) {
-    .preguntasFrecuentes {
-        .preguntasFrecuentes__titulo h1{
+    .contenedorTitulo {
+        .contenedorTitulo__subcontenedor {
+            h1{
             font-size: 25px;
-        }
-        .preguntasFrecuentes__titulo h3 {
+            }
+            h3 {
             font-size: 18px;
+            }
         }
+    }
+    .preguntasFrecuentes {
         .pregunta {
             font-size: 16px;
             i {
